@@ -120,8 +120,35 @@
         }, 1500);
     });
     
+    // Init Slider
+    $(function(){
+        $('.work-slider').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            lazyLoad: 'ondemand',
+            arrows:false,
+            autoplay: true,
+            autoplaySpeed: 10000,
+            responsive: [
+                {
+                  breakpoint: 992,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                  }
+                },
+                {
+                  breakpoint: 540,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                  }
+                }
+              ]
+          });
+    });
 
-    
     //===== 
     
     
