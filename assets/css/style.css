@@ -35,6 +35,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-style: normal;
+  overflow-x: hidden;
   color: #8a8fa3; }
 
 * {
