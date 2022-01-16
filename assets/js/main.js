@@ -120,8 +120,8 @@
         }, 1500);
     });
     
-    // Init Slider
     $(function(){
+        // Init Slider
         $('.work-slider').slick({
             infinite: true,
             slidesToShow: 4,
@@ -146,7 +146,15 @@
                   }
                 }
               ]
-          });
+        });
+
+        // Slider navigation button
+        $('#work .left').click(function(){
+            $('.work-slider').slick('slickPrev');
+        });
+        $('#work .right').click(function(){
+            $('.work-slider').slick('slickNext');
+        });
     });
 
     //===== 

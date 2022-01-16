@@ -1873,4 +1873,31 @@ p.form-message.success, p.form-message.error {
 .single-work:hover{
   animation: smallJump .5s;
 }
+#work .left{
+  position: absolute;
+  left: -45px;
+  top: 60%;
+  bottom: auto;
+  right: auto;
+  padding:10px;
+}
+#work .right{
+  position: absolute;
+  right: -45px;
+  top: 60%;
+  bottom: auto;
+  left: auto;
+  padding:10px;
+}
+#work .left .fa,#work .right .fa{
+  color: #1c2940;
+}
+#work .left:hover .fa,#work .right:hover .fa{
+  animation:smallJump 1s infinite;
+}
+@media (max-width:1050px){
+  #work .left,#work .right{
+    display:none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
