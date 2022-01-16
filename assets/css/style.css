@@ -31,11 +31,13 @@
     1. COMMON css 
 ===========================*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800");
+html{
+  overflow-x: hidden;
+}
 body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-style: normal;
-  overflow-x: hidden;
   color: #8a8fa3; }
 
 * {
