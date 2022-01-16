@@ -898,17 +898,52 @@ p {
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s; }
+  transition: all 0.3s ease-out 0s;
+  height:100%; }
   @media (max-width: 767px) {
     .single-service {
       padding: 15px; } }
+  .single-service .service-icon{
+    animation: shake 2s infinite;
+  }
+  @keyframes shake {
+    0% { transform: scale(1.25, 0.75); }
+    50% { transform: scale(1, 1); }
+    55% { transform: rotate(15deg); }
+    60% { transform: rotate(-15deg); }
+    65% { transform: rotate(15deg); }
+    70% { transform: rotate(-15deg); }
+    100% { transform: scale(1.25, 0.75); }
+  }
+  @keyframes smallJump {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
   .single-service .service-icon i {
     font-size: 60px;
     color: #274C77;
     line-height: 56px; }
   .single-service .service-content {
-    margin-top: 11px; }
-    .single-service .service-content .service-title a {
+    margin-top: 11px;
+    height: 68%;
+    display: flex;
+    flex-direction: column; }
+    @media (max-width: 1200px) {
+      .single-service .service-content {
+        height: 70%; }
+      }
+      @media (max-width: 991px) {
+        .single-service .service-content {
+          height: 61%; }
+          #service .col-lg-3.col-md-6.col-sm-8.h-auto{
+            margin-top: 15px !important;
+          }
+          #service .single-service {
+            margin-top:0px !important;
+          }
+        }
+    .single-service .service-content .service-title {
       font-size: 22px;
       font-weight: 600;
       color: #32333c;
@@ -917,8 +952,9 @@ p {
       -moz-transition: all 0.3s ease-out 0s;
       -ms-transition: all 0.3s ease-out 0s;
       -o-transition: all 0.3s ease-out 0s;
-      transition: all 0.3s ease-out 0s; }
-      .single-service .service-content .service-title a:hover {
+      transition: all 0.3s ease-out 0s;
+      flex:1; }
+      .single-service .service-content .service-title:hover {
         color: #274C77; }
   .single-service:hover {
     -webkit-box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23);
@@ -1007,6 +1043,15 @@ p {
     width: auto;
     height: 360px;
   }
+    /* width */
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #aaa;
+      border-radius: 5px;
+    }
   .single-work .work-image img {
     width: 100%; }
   .single-work .work-overlay {
@@ -1015,7 +1060,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(117, 78, 249, 0.8);
+    background-color: rgba(80, 125, 188, 0.8);
     opacity: 0;
     visibility: hidden;
     -webkit-transition: all 0.3s ease-out 0s;
@@ -1277,6 +1322,9 @@ p {
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s; }
+  .contact-box .contact-icon{
+    animation: shake 2s infinite;
+  }
   @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .contact-box {
       padding: 30px 25px; } }
@@ -1433,7 +1481,7 @@ p.form-message.success, p.form-message.error {
     }
     
     .logo-2 {
-      animation-duration: 1.5s;
+      animation-duration: 2s;
       animation-name: changewidth;
       animation-iteration-count: infinite;
       animation-direction: alternate;
@@ -1789,4 +1837,39 @@ p.form-message.success, p.form-message.error {
       line-height: 54px;
       cursor: pointer; }
 
+/* tooltips for work listing */
+.tool-tip {
+  position: absolute;
+  top: 46%;
+  bottom: auto;
+  left:50%;
+  right:auto;
+  transform: translate(-50%,-50%);
+  margin-top: 10px;
+  padding: 7px 17px;
+  font-size: 1rem;
+  font-weight: 500;
+  white-space: nowrap;
+  color: #000;
+  border-radius: 50px;
+  background-color: #fff;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
+    0 5px 15px rgba(0, 0, 0, 0.07);
+  height: fit-content;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.single-work:hover .tool-tip {
+  bottom: 100%;
+  opacity: 0.9;
+}
+.single-work:hover{
+  animation: smallJump .5s;
+}
 /*# sourceMappingURL=style.css.map */
