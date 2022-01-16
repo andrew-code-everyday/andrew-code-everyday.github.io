@@ -1874,6 +1874,9 @@ p.form-message.success, p.form-message.error {
   user-select: none;
   opacity: 0;
   transition: all 0.2s ease-in-out;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .single-work:hover .tool-tip {
