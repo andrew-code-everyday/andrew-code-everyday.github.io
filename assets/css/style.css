@@ -170,10 +170,20 @@ p {
       border-color: #274C77; }
 
 /*===== All Section Title Style =====*/
+.section-title .title + p {
+  animation-duration: 2s;
+  animation-name: changewidth;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
 .section-title .title {
   font-weight: 700;
   font-size: 45px;
   color: #000;
+  animation-duration: 2s;
+  animation-name: changewidth;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
   padding-bottom: 20px; }
   @media (max-width: 767px) {
     .section-title .title {
@@ -1899,5 +1909,11 @@ p.form-message.success, p.form-message.error {
   #work .left,#work .right{
     display:none;
   }
+}
+.footer-content p.mt-{
+  animation-duration: 2s;
+  animation-name: changewidth;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 /*# sourceMappingURL=style.css.map */
