@@ -156,6 +156,9 @@
         $('#work .right').click(function(){
             $('.work-slider').slick('slickNext');
         });
+
+        // Footer year
+        $(".footer-year").text(new Date().getFullYear());
     });
 
     //===== 
