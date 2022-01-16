@@ -130,6 +130,7 @@
             arrows:false,
             autoplay: true,
             autoplaySpeed: 10000,
+            dots:true,
             responsive: [
                 {
                   breakpoint: 992,
