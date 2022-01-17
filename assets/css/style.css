@@ -728,9 +728,6 @@ p {
     @media (max-width: 767px) {
       .header-content-right .title {
         font-size: 38px; } }
-  .header-content-right p {
-    padding-bottom: 40px; }
-
 .header-image {
   max-width: 430px;
   margin: 0 auto;
