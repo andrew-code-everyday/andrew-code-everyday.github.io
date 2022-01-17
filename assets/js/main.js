@@ -129,7 +129,7 @@
             lazyLoad: 'ondemand',
             arrows:false,
             autoplay: true,
-            autoplaySpeed: 10000,
+            autoplaySpeed: 5000,
             dots:true,
             responsive: [
                 {
