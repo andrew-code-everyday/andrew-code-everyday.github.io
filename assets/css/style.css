@@ -2043,3 +2043,14 @@ p.form-message.success, p.form-message.error {
     animation-direction: alternate;
   }
 }
+@media (max-width:991px){
+  .about-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about-content p{
+    text-align: center;
+  }
+}
