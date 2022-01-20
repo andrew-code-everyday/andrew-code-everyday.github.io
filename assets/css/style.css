@@ -178,20 +178,10 @@ p {
       border-color: #274C77; }
 
 /*===== All Section Title Style =====*/
-.section-title .title + p {
-  animation-duration: 2s;
-  animation-name: changewidth;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
 .section-title .title {
   font-weight: 700;
   font-size: 45px;
   color: #000;
-  animation-duration: 2s;
-  animation-name: changewidth;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
   padding-bottom: 20px; }
   @media (max-width: 767px) {
     .section-title .title {
@@ -889,7 +879,7 @@ p {
       left: 0;
       height: 5px;
       border-radius: 5px;
-      background-image: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
+      background-image: linear-gradient(90deg,#274C77 0%, #330867 100%);
       -webkit-transition: all 2s ease-out 0s;
       -moz-transition: all 2s ease-out 0s;
       -ms-transition: all 2s ease-out 0s;
@@ -1930,12 +1920,6 @@ p.form-message.success, p.form-message.error {
     display:none;
   }
 }
-.footer-content p.mt-{
-  animation-duration: 2s;
-  animation-name: changewidth;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
 .work-slider .slick-dots {
   width: 100%;
   display: flex;
@@ -2042,4 +2026,20 @@ p.form-message.success, p.form-message.error {
   animation-name: changewidth;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
+}
+@media (max-width:600px){
+  .illu-char-1,.illu-chart-2{
+    display:none;
+  }
+  .illu-speaker{
+    top: 10px;
+    bottom:auto;
+    transform: unset !important;
+  }
+  .illu-speaker img{
+    animation-duration: 2s;
+    animation-name: changewidth;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
 }
