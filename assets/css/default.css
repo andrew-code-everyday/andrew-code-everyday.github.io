@@ -881,6 +881,9 @@
 .gray-bg {
 	background: #fbfbfb;
 }
+.azure-bg{
+	background-image: linear-gradient(336deg, #274C77 0%, #330867 100%);
+}
 .white-bg {
 	background: #fff;
 }

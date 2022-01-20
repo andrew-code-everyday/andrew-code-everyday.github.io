@@ -44,6 +44,9 @@
         <!--====== Fontawesome css ======-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        <!--====== AOS css ======-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-W42W20T9V4"></script>
         <script>
@@ -176,12 +179,15 @@
 
     <!--====== ABOUT PART START ======-->
 
-    <section id="about" class="about-area pt-125 pb-130">
+    <section id="about" class="about-area pt-125 pb-130 position-relative">
+        <div class="illu-char" data-aos="fade-left">
+            <img src="assets/images/illustration/illu-char.png" alt="illu-char">
+        </div>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-title text-center">
-                        <h2 class="title">About Me</h2>
+                        <h2 class="title gradient-title">About Me</h2>
                         <p>I help designers, small agencies and businesses bring their ideas to life.</p>
                     </div>
                 </div>
@@ -192,7 +198,7 @@
                         <h5 class="about-title">Hi There! I'm Andrew Tay</h5>
                         <p>An experienced software engineer who <br> constantly seeks out <br> innovative solutions to everyday problems. <br> In my three years in this industry, <br> I contributed to over a dozen projects.</p>
                         <ul class="clearfix">
-                            <li>
+                            <!--<li>
                                 <div class="single-info d-flex align-items-center">
                                     <div class="info-icon">
                                         <i class="lni-calendar"></i>
@@ -200,8 +206,8 @@
                                     <div class="info-text">
                                         <p class="text-color"><span>Date of birth:</span> 19 February 1995</p>
                                     </div>
-                                </div> <!-- single info -->
-                            </li>
+                                </div>
+                            </li>-->
                             <li>
                                 <div class="single-info d-flex align-items-center">
                                     <div class="info-icon">
@@ -327,7 +333,13 @@
 
     <!--====== SERVICES PART START ======-->
 
-    <section id="service" class="services-area gray-bg pt-125 pb-130">
+    <section id="service" class="services-area azure-bg pt-125 pb-130 position-relative">
+        <div class="illu-char-1" data-aos="fade-left">
+            <img src="assets/images/illustration/illu-char-1.png" alt="illu-char">
+        </div>
+        <div class="illu-chart" data-aos="fade-right">
+            <img src="assets/images/illustration/illu-chart.png" alt="illu-chart">
+        </div>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -340,8 +352,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-3 col-md-6 col-sm-8 h-auto">
                     <div class="single-service text-center mt-30">
-                        <div class="service-icon shake">
-                            <i class="lni-website"></i>
+                        <div class="service-icon">
+                            <img src="assets/images/illustration/illu-web-development.png" alt="Web Development">
                         </div>
                         <div class="service-content">
                             <h4 class="service-title">Web <br> Development</h4>
@@ -350,8 +362,8 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-8 h-auto">
                     <div class="single-service text-center mt-30">
-                        <div class="service-icon shake">
-                            <i class="lni-mobile"></i>
+                        <div class="service-icon">
+                            <img src="assets/images/illustration/illu-app-development.png" alt="Mobile App Development">
                         </div>
                         <div class="service-content">
                             <h4 class="service-title">App <br> Design</h4>
@@ -360,8 +372,8 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-8 h-auto">
                     <div class="single-service text-center mt-30">
-                        <div class="service-icon shake">
-                            <i class="lni-support"></i>
+                        <div class="service-icon">
+                            <img src="assets/images/illustration/illu-consultant.png" alt="Illustration Consultant">
                         </div>
                         <div class="service-content">
                             <h4 class="service-title">Consultancy <br>&<br> Support</h4>
@@ -430,12 +442,18 @@
 
     <!--====== WORK PART START ======-->
 
-    <section id="work" class="work-area pt-125 pb-130">
+    <section id="work" class="work-area pt-125 pb-130 position-relative">
+        <div class="illu-chart-1" data-aos="fade-right">
+            <img src="assets/images/illustration/illu-chart-1.png" alt="illu-chart-1">
+        </div>
+        <div class="illu-chart-2" data-aos="fade-left">
+            <img src="assets/images/illustration/illu-chart-2.png" alt="illu-chart-2">
+        </div>
         <div class="container position-relative">
             <div class="row">
                 <div class="col-lg-8">
                     <div class="section-title pb-25">
-                        <h2 class="title">My Recent Works</h2>
+                        <h2 class="title gradient-title">My Recent Works</h2>
                         <p>Turning coffee into code</p>
                     </div>
                 </div>
@@ -813,7 +831,7 @@
 
     <!--====== PRICING PART START ======-->
 
-    <!--<section id="pricing" class="pricing-area gray-bg pt-125 pb-130">
+    <!--<section id="pricing" class="pricing-area azure-bg pt-125 pb-130">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -969,7 +987,16 @@
 
     <!--====== CONTACT PART START ======-->
 
-    <section id="contact" class="contact-area pt-125 pb-130 gray-bg">
+    <section id="contact" class="contact-area pt-125 pb-130 azure-bg position-relative">
+        <div class="illu-bell" data-aos="fade-right">
+            <img src="assets/images/illustration/illu-bell.png" alt="Illustration Bell">
+        </div>
+        <div class="illu-speaker" data-aos="fade-left">
+            <img src="assets/images/illustration/illu-speaker.png" alt="Illustration Speaker">
+        </div>
+        <div class="illu-chat" data-aos="fade-right">
+            <img src="assets/images/illustration/illu-chat.png" alt="Illustration Chat">
+        </div>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -983,24 +1010,13 @@
                 <div class="col-lg-4 col-md-6 col-sm-7">
                     <div class="contact-box text-center mt-30">
                         <div class="contact-icon">
-                            <i class="lni-map-marker"></i>
-                        </div>
-                        <div class="contact-content">
-                            <h6 class="contact-title">Address</h6>
-                            <p>Singapore</p>
-                        </div>
-                    </div> <!-- contact box -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-7">
-                    <div class="contact-box text-center mt-30">
-                        <div class="contact-icon">
                             <i class="lni-phone"></i>
                         </div>
                         <div class="contact-content">
                             <h6 class="contact-title">Phone</h6>
                             <a class="text-color" href="tel:+6588925212">+65 8892-5212</a>
                         </div>
-                    </div> <!-- contact box -->
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-7">
                     <div class="contact-box text-center mt-30">
@@ -1011,7 +1027,7 @@
                             <h6 class="contact-title">Email</h6>
                             <a class="text-color" href="mailto:atcc0219@gmail.com">atcc0219@gmail.com</a>
                         </div>
-                    </div> <!-- contact box -->
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -1034,12 +1050,12 @@
                         </form>
                     </div>
                 </div>-->
-                <div class="col-lg-12">
-                    <div class="contact-map mt-60">
+                <div class="col-lg-12 contact-svg">
+                    <!--<div class="contact-map mt-60">
                         <div class="gmap_canvas"> 
                             <iframe id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d127640.61252050432!2d103.84425!3d1.3140001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da11238a8b9375%3A0x887869cf52abf5c4!2sSingapore!5e0!3m2!1sen!2ssg!4v1642215302504!5m2!1sen!2ssg" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" loading="lazy"></iframe>                           
                         </div>
-                    </div> <!-- contact map -->
+                    </div>-->
                 </div>
             </div>
         </div>
@@ -1115,6 +1131,9 @@
     
     <!--====== Slick JS ======-->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!--====== AOS js ======-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>

@@ -117,7 +117,7 @@
         
         $('html, body').animate({
             scrollTop: 0,
-        }, 1500);
+        }, 200);
     });
     
     $(function(){
@@ -159,6 +159,9 @@
 
         // Footer year
         $(".footer-year").text(new Date().getFullYear());
+
+        // INIT AOS
+        AOS.init();
     });
 
     //===== 
