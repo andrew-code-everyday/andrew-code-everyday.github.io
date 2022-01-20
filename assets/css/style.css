@@ -579,7 +579,7 @@ p {
           content: '';
           width: 3px;
           height: 0;
-          background-color: #274C77;
+          background: -webkit-linear-gradient(90deg, #274C77 0%, #330867 100%);
           left: 50%;
           top: -50px;
           -webkit-transform: translateX(-50%);
@@ -599,7 +599,9 @@ p {
             .navigation .navbar .navbar-nav .nav-item a::before {
               display: none; } }
       .navigation .navbar .navbar-nav .nav-item.active a, .navigation .navbar .navbar-nav .nav-item:hover a {
-        color: #274C77; }
+        background: -webkit-linear-gradient(336deg, #274C77 0%, #330867 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
         .navigation .navbar .navbar-nav .nav-item.active a::before, .navigation .navbar .navbar-nav .nav-item:hover a::before {
           height: 45px; }
 
