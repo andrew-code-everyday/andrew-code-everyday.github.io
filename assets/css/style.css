@@ -1972,7 +1972,6 @@ p.form-message.success, p.form-message.error {
   position: absolute;
   right: 0px;
   top: 50%;
-  transform: translateY(-50%) !important;
   max-width: 320px;
 }
 .illu-chat{
