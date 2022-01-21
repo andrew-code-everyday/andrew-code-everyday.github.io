@@ -1912,9 +1912,6 @@ p.form-message.success, p.form-message.error {
 #work .left .fa,#work .right .fa{
   color: #1c2940;
 }
-#work .left:hover .fa,#work .right:hover .fa{
-  animation:smallJump 1s infinite;
-}
 @media (max-width:1050px){
   #work .left,#work .right{
     display:none;
